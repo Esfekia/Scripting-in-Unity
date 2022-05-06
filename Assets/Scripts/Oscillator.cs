@@ -9,7 +9,7 @@ public class Oscillator : MonoBehaviour
     public float movementSpeed;
     public float movementDistance;
 
-    [Header("Movement Position")]
+    [Header("Movement Positions")]
     public Vector3 startingPosition;
     public Vector3 posEnd;
     public Vector3 negEnd;
@@ -32,13 +32,12 @@ public class Oscillator : MonoBehaviour
     void FixedUpdate()
     {
         //if we reach the bounds of the movement, reverse the direction vector
-        if (Vector3.Distance(transform.position,posEnd) <= 0.01f || Vector3.Distance(transform.position, negEnd) <= 0.01f)
+        if (Vector3.Distance(transform.position, posEnd) <= 0.01f || Vector3.Distance(transform.position, negEnd) <= 0.01f)
         {
             direction *= -1;
         }
 
-        //Move the platform
-        transform.Translate(direction * movementSpeed * Time.deltaTime);
-                    
+        //Move the platform.
+        transform.Translate(direction * movementSpeed * Time.deltaTime);                    
     }
 }
