@@ -2905,6 +2905,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7906d51bc66674e93e3fd2df04827b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counter: 0
+  bonusObject: {fileID: 1162076593523988, guid: 04050b28bf5ccd145834a4972f731012,
+    type: 3}
 --- !u!4 &1325350389
 Transform:
   m_ObjectHideFlags: 0
@@ -3843,6 +3846,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2192685945606595258, guid: 72863721dcd71c348988a500b78b3b02,
+        type: 3}
+      propertyPath: movementAxis.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192685945606595258, guid: 72863721dcd71c348988a500b78b3b02,
+        type: 3}
+      propertyPath: movementAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192685945606595258, guid: 72863721dcd71c348988a500b78b3b02,
+        type: 3}
+      propertyPath: movementDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2192685945606595259, guid: 72863721dcd71c348988a500b78b3b02,
         type: 3}
       propertyPath: m_RootOrder
@@ -3911,6 +3929,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Moving Platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192685945606595258, guid: 72863721dcd71c348988a500b78b3b02,
+        type: 3}
+      propertyPath: movementAxis.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192685945606595258, guid: 72863721dcd71c348988a500b78b3b02,
+        type: 3}
+      propertyPath: movementAxis.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2192685945606595258, guid: 72863721dcd71c348988a500b78b3b02,
+        type: 3}
+      propertyPath: movementDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2192685945606595259, guid: 72863721dcd71c348988a500b78b3b02,
         type: 3}
@@ -4984,6 +5017,11 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 15340451}
+    - target: {fileID: 669816047339386673, guid: 77c5ba5844d82f34eac514430cfd0785,
+        type: 3}
+      propertyPath: bonusSpawner
+      value: 
+      objectReference: {fileID: 1325350388}
     - target: {fileID: 669816047339386674, guid: 77c5ba5844d82f34eac514430cfd0785,
         type: 3}
       propertyPath: cameraRig
